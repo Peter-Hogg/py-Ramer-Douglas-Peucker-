@@ -18,7 +18,7 @@ def DouglasPeucker(PointList, epsilon):
     p1=np.array(pointArray[0])
     p2=np.array(pointArray[-1])
 
-    for i in range(1, end-1, 2):
+    for i in range(0, end, 2):
         p3 = np.array(pointArray[i])
         d  = abs(np.cross(p2-p1,p3-p1)/np.linalg.norm(p2-p1))
         if d > dmax:
